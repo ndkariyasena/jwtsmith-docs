@@ -12,31 +12,29 @@ type FeatureItem = {
 const FeatureList: FeatureItem[] = [
   {
     title: 'Easy to Use',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    Svg: require('@site/static/img/easy-to-use.svg').default,
+    // Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        JWT Smith is designed with simplicity in mind, ensuring developers can easily integrate robust authentication and authorization into their applications.
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    title: 'Middleware Protection',
+    Svg: require('@site/static/img/middleware-protection.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Secure your APIs effortlessly with powerful middleware that validates tokens and enforces access controls for every endpoint.
       </>
     ),
   },
   {
-    title: 'Powered by React',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    title: 'Customizability',
+    Svg: require('@site/static/img/customizability.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Tailor every aspect of the module to your needs, from token generation to role-based access control, ensuring it fits perfectly into your project.
       </>
     ),
   },
