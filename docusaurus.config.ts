@@ -6,7 +6,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
   title: 'JWT Smith',
-  tagline: 'Dinosaurs are cool',
+  tagline: 'The Forge of Secure Tokens',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
@@ -18,7 +18,7 @@ const config: Config = {
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  projectName: 'jwt-smith', // Usually your repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -111,10 +111,6 @@ const config: Config = {
               label: 'Discord',
               href: 'https://discordapp.com/invite/docusaurus',
             },
-            {
-              label: 'X',
-              href: 'https://x.com/docusaurus',
-            },
           ],
         },
         {
@@ -131,7 +127,7 @@ const config: Config = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} JWT Smith, N D K Ariyasena.`,
     },
     prism: {
       theme: prismThemes.github,
