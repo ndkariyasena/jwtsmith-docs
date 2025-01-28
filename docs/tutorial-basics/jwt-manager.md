@@ -115,8 +115,6 @@ const jwtManager = JwtManager({
   },
   logger: console, // Using the built-in console as a logger
 });
-
-export default jwtManager;
 ```
 
 ---

@@ -75,9 +75,9 @@ import express from 'express';
 import { 
   validateJwtHeaderMiddleware, 
   validateJwtCookieMiddleware, 
-  roleBasedAuthenticationMiddleware 
+  roleBasedAuthenticationMiddleware,
+  JwtManager
 } from 'jwt-smith';
-import { JwtManager } from 'jwt-smith';
 
 const app = express();
 
