@@ -2,6 +2,7 @@
 sidebar_position: 1
 ---
 
+![Jwt Smith logo](/img/docusaurus.png)
 # Installation and Setup
 
 In this section, we will guide you through the process of installing and setting up **JWT Smith** in your project. By the end of this section, you’ll have JWT Smith integrated into your Node.js or TypeScript application, ready to handle JWT-based authentication.
