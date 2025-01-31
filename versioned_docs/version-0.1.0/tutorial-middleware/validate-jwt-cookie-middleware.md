@@ -107,3 +107,5 @@ const jwtManager = new JwtManager({
 
 This middleware ensures secure and efficient token validation, making authentication management seamless.
 
+[Next: Validate JWT from Authorization Header](validate-jwt-header-middleware.md)
+

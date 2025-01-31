@@ -54,3 +54,5 @@ The configurations employed by the `validateJwtCookieMiddleware` function are al
 
 This middleware provides a flexible way to handle JWT validation from headers while ensuring security and extensibility.
 
+[Next: Role-Based Authentication Middleware](role-based-authentication-middleware.md)
+

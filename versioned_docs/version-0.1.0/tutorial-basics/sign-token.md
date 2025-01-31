@@ -85,3 +85,5 @@ console.log('Signed Token:', token);
 
 ---
 
+[Continue to: Token Verification with the Verify Method](token-verification.md)
+

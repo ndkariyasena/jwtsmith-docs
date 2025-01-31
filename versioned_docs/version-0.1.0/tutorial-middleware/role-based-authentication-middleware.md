@@ -175,4 +175,3 @@ interface (request: AuthedRequest) => Promise<string | undefined>;
 ```
 
 This middleware provides a structured approach to role-based authentication, ensuring secure access control for your application.
-
