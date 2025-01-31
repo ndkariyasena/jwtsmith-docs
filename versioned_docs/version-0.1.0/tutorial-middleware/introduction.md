@@ -21,3 +21,5 @@ Each middleware function is designed to integrate effortlessly with Express appl
 
 In the following sections, we will dive into each middleware in detail, covering their usage, customization options, and best practices.
 
+[Next: Validate JWT from Cookies](validate-jwt-cookie-middleware.md)
+

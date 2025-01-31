@@ -107,3 +107,5 @@ app.listen(3000, () => {
 ## Next Steps
 At this point, you have successfully installed and integrated JWT Smith into your application. Next, we’ll dive into the **core methods** provided by JWT Smith, starting with core configurations management.
 
+[Continue to: Jwt Manager](jwt-manager.md)
+
