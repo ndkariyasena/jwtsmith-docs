@@ -49,5 +49,3 @@ To follow this tutorial, you’ll need:
 ## Getting Started
 Let’s begin by setting up JWT Smith in your project. In the next section, we’ll guide you through the installation process and walk you through its basic configuration.
 
-[Continue to: Installation and Setup](installation-setup.md)
-

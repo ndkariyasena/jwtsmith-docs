@@ -80,11 +80,14 @@ const config: Config = {
           position: 'left',
           label: 'Tutorial',
         },
-        {to: '/blog', label: 'Blog', position: 'left'},
+        /* {to: '/blog', label: 'Blog', position: 'left'}, */
         {
           href: 'https://github.com/ndkariyasena/jwt-smith',
           label: 'GitHub',
           position: 'right',
+        },
+        {
+          type: 'docsVersionDropdown',
         },
       ],
     },
@@ -100,7 +103,7 @@ const config: Config = {
             },
           ],
         },
-        {
+        /* {
           title: 'Community',
           items: [
             {
@@ -112,18 +115,26 @@ const config: Config = {
               href: 'https://discordapp.com/invite/docusaurus',
             },
           ],
-        },
+        }, */
         {
           title: 'More',
           items: [
-            {
+            /* {
               label: 'Blog',
               to: '/blog',
-            },
+            }, */
             {
               label: 'GitHub',
               href: 'https://github.com/ndkariyasena/jwt-smith',
             },
+            {
+              label: 'LinkedIn',
+              href: 'https://www.linkedin.com/in/dananjayakuma/',
+            },
+            {
+              label: 'Portfolio',
+              href: 'https://ndkariyasena.com/'
+            }
           ],
         },
       ],

@@ -97,5 +97,4 @@ console.log('Decoded Payload:', decoded);
 
 ---
 
-[Continue to: Middleware Functions](middleware-functions.md)
 
