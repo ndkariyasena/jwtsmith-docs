@@ -57,9 +57,7 @@ Developers can customize this middleware through `JwtManager` by passing custom 
   }
   ```
   :::danger[NOTE]
-
   JWT Smith provides a memory-based solution for token storage, but it is *highly not recommended for production environments*.
-
   :::
 
 - **`cookieSettings`** *(Object, optional)*: Developers can configure cookie names for authentication and refresh tokens.

@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # Tutorial Intro
 
-Welcome to the **JWT Smith** tutorial! This guide will help you get started with JWT Smith, a robust and customizable JWT authentication module built on top of `jsonwebtoken`. Whether you're new to authentication or a seasoned developer, this tutorial will walk you through the core features, setup process, and real-world use cases of JWT Smith.
+Welcome to the **JWT Smith** tutorial! This guide will help you get started with JWT Smith, a robust and customizable JWT authentication module built on top of [**jsonwebtoken**](https://www.npmjs.com/package/jsonwebtoken?activeTab=readme). Whether you're new to authentication or a seasoned developer, this tutorial will walk you through the core features, setup process, and real-world use cases of JWT Smith.
 
 ## What is JWT Smith?
 
