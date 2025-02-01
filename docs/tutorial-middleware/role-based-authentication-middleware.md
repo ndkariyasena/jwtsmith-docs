@@ -162,17 +162,52 @@ The permissions file (`.auth-permissions.json`) must be located at the root leve
         "permissions": ["read:post"]
       }
     ]
-  },
+  }
+}
+```
+
+```typescript
+interface PermissionsConfiguration {
+  versioned?: boolean;
+  activeVersions?: string[];
+  common: {
+    roles: RolesSet[];
+  };
+  groups: GroupedRoutesPermissionConfig;
+  endpoints: EndPointsPermissionConfig[];
+}
+
+interface RolesSet {
+  name: string;
+  permissions: string[];
+}
+
+type GroupedRoutesPermissionConfig = Record<string, EndPointConfig>;
+
+interface EndPointConfig {
+  basePath: string;
+  permissions: PermissionsSet[];
+  endpoints: EndPointsPermissionConfig[];
+}
+
+interface PermissionsSet {
+  roles: string[];
+  actions: string[];
+}
+
+interface EndPointsPermissionConfig {
+  path: string;
+  methods: string[];
+  permissions: PermissionsSet[];
 }
 ```
 
 ## Customization via JwtManager
 
-- **`extractApiVersion`** *(Function, optional)*: Custom function to extract API version from the request.
+- **`extractApiVersion`** _(Function, optional)_: Custom function to extract API version from the request.
 
 ```typescript title="authTokenExtractor"
 interface (request: AuthedRequest) => Promise<string | undefined>;
 ```
 
 This middleware provides a structured approach to role-based authentication, ensuring secure access control for your application.
-

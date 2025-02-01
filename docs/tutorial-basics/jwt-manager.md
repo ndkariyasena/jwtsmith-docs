@@ -21,32 +21,29 @@ This flexibility makes `JwtManager` a key component of JWT Smith, tailored for b
 ## Parameters
 The `JwtManager` method accepts the following parameters:
 
-### 1. `tokenStorage` (Object) [optional]
-- **Description:** Custom storage for tokens, typically a class instance implementing storage methods.
-- **Note:** Default/in-build method is not recommended for production environments.
-
-### 2. `logger` (Object) [optional]
+### 1. `logger` (Object) [optional]
 - **Description:** A custom logger instance (e.g., Pino, Winston) for logging events and errors.
 
-### 3. `publicKey` (String) [required]
+### 2. `publicKey` (String) [required]
 - **Description:** The public key used for verifying JWTs.
 
-### 4. `refreshTokenKey` (String) [optional]
+### 3. `refreshTokenKey` (String) [optional]
 - **Description:** The key used for signing refresh tokens.
 - **Note:** If the key is undefined module will use the `public-key`.
 
-### 5. `signOptions` (Object) [optional]
+### 4. `signOptions` (Object) [optional]
 - **Description:** Configuration options for signing JWTs.
 - **Details:** All options provided by the `jsonwebtoken` library are supported.
 
-### 6. `verifyOptions` (Object) [optional]
+### 5. `verifyOptions` (Object) [optional]
 - **Description:** Configuration options for verifying JWTs.
 - **Details:** All options provided by the `jsonwebtoken` library are supported.
 
-### 7. `middlewareConfigs` (Object) [optional]
+### 6. `middlewareConfigs` (Object) [optional]
 - **Description:** Configuration object for customizing middleware behavior.
 
 #### Middleware Configurations
+- **`tokenStorage` (Object) [optional]:** Custom storage for tokens, typically a class instance implementing storage methods.
 - **`authHeaderName` (String) [optional]:** Name of the HTTP header that carries the authentication token.
 - **`refreshTokenHeaderName` (String) [optional]:** Name of the HTTP header that carries the refresh token.
 - **`appendToRequest` (Array | Boolean) [optional]:** A list of properties to append to the request object. Acceptable values:
@@ -67,6 +64,10 @@ The `JwtManager` method accepts the following parameters:
 - **`refreshTokenPayloadVerifier` (Function) [optional]:** A custom handler for verifying the payload of the refresh token.
 - **`refreshTokenHolderVerifier` (Function) [optional]:** A custom handler for verifying the owner/holder of the refresh token.
 - **`extractApiVersion` (Function) [optional]:** A custom handler for extracting the API version from the request.
+
+:::danger[NOTE]
+JWT Smith provides a memory-based solution for token storage, but it is **highly not recommended for production environments**.
+:::
 
 ---
 
