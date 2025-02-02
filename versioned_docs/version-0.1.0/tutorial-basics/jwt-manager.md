@@ -122,4 +122,4 @@ const jwtManager = JwtManager({
 ## Next Steps
 Now that you’ve configured the `JwtManager`, you can start using it for token signing, verification, and middleware integration.
 
-[Continue to: Token Signing and Verification](token-signing-verification.md)
+[Continue to: Token Signing and Verification](sign-token.md)
